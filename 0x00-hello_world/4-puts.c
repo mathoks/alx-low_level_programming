@@ -2,14 +2,12 @@
 #include <string.h>
 /**
  * main - Prints a string
- * @str: String to be output to screen
  * Description: Puts the string message to the screen
  * puts - Displays output to the screen
- * Return: Always 0 (success)
+ * Return: Always 0 (succesd)
  */
 int main(void)
 {
-char str[53] = "\"Programming is like building a multilingual puzzle";
-puts(str);
+puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
