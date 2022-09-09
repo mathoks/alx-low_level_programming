@@ -8,9 +8,14 @@ int main(void)
 {
 char c;
 c = 'a';
-while (c <= 'z')
+while (c <= 'z')	
+{	
+if (c == 'e')
 {
-if (c = 'e')
+c++;
+continue;
+}
+if (c == 'q')
 {
 c++;
 continue;
