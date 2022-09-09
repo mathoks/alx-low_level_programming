@@ -4,7 +4,7 @@
 
 /**
  * main - prints values
- * Description: checks if positive or nagative 
+ * Description: checks if positive or nagative
  * Return: 0 (success)
  */
 int main(void)
