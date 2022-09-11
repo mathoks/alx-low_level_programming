@@ -22,8 +22,8 @@ putchar(num2 + '0');
 if (i != 89)
 {
 putchar(',');
-}
 putchar(' ');
+}
 i++;
 }
 putchar('\n');
