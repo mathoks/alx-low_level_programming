@@ -1,26 +1,30 @@
-#include <stdio.h>                                                                                                                     
-/**     
+#include <stdio.h>
+/**
  * main - Prints all possible combinations of single-digit numbers.
- * 
- * Return: Always 0.
- */                                                                            
+ * Description: prints
+ * Return: Always 0
+ */
 int main(void)
 {
-int num1, num2;
-for (num1 = 0; num1 <= 98; num1++)
+int i, num1, num2;
+i = 0;
+while (i <= 90)
 {
-for (num2 = num1 + 1; num2 <= 99; num2++)
+num1 = i / 10;
+num2 = i % 10;
+if (num1 >= num2)
 {
-putchar((num1 / 10) + '0');
-putchar((num1 % 10) + '0');
-putchar(' ');
-putchar((num2 / 10) + '0');
-putchar((num2 % 10) + '0');
-if (num1 == 98 && num2 == 99)
+i++;
 continue;
-putchar(',');
-putchar(' ');
 }
+putchar(num1 + '0');
+putchar(num2 + '0');
+if (i != 89)
+{
+putchar(',');
+}
+putchar(' ');
+i++;
 }
 putchar('\n');
 return (0);
