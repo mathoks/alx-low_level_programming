@@ -1,7 +1,7 @@
 #include <ctype.h>
 #include "main.h"
 /**
- * _isalpha.c - is alphabet
+ * _isalpha - is alphabet
  * @c: values
  * Description: vavav
  * Return: 1 or 1
