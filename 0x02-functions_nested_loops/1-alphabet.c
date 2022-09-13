@@ -1,11 +1,17 @@
 #include "main.h"
 /**
- * main - prints alphabet
- * Description: cool
- * Return: 0
+ * print_alphabet - ghytrrt
+ * Description: print alphabets
+ * Return: 0;
  */
-int main(void)
+void print_alphabet(void)
 {
-print_alphabet();
-return (0);
+int i = 'a';
+while (i <= 'z')
+{
+_putchar(i);
+i++;
+}
+_putchar('\n');
+
 }
