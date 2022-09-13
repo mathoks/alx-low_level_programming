@@ -6,7 +6,7 @@
  * Description: vavav
  * Return: 1 or 1
  */
-int _isalpha(char c)
+int _isalpha(int c)
 {
 if (isalpha(c) > 0)
 {
