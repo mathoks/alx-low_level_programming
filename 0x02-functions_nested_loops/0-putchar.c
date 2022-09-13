@@ -18,4 +18,5 @@ for (i = 0; i < count; i++)
 _putchar(key[i]);
 }
 _putchar('\n');
+return 0;
 }
