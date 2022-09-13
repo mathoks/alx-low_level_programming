@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- *  sign - hjfud
+ *  print_sign - hjfud
  *  @n: variable
  *  Definition: hdhhdh
  *  Return: 1 or 0
  */
-int sign(int n)
+int print_sign(int n)
 {
 if (n > 0)
 return (1);
