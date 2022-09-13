@@ -5,7 +5,7 @@
  *  Definition: hdhhdh
  *  Return: 1 or 0
  */
-int sign (n)
+int sign(int n)
 {
 if (n > 0)
 return (1);
