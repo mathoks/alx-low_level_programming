@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * _putchar - hey putchar
+ * main - hey putchar
  * Description: prints
  * Return: '0'
  */
-int _0putchar(void)
+int main(void)
 {
-char * key = "_putchar";
-int count, i; 
+char key[9] = "_putchar";
+int count, i;
 count = 0;
 while (key[count] != '\0')
 {
@@ -18,5 +18,5 @@ for (i = 0; i < count; i++)
 _putchar(key[i]);
 }
 _putchar('\n');
-return 0;
+return (0);
 }
