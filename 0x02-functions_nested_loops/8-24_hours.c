@@ -4,14 +4,21 @@
  * Description: dhdhufugu
  * Return: 0
  */
-int jack_bauer (void)
+void jack_bauer(void)
 {
-for (i = 0; i < 60; i++)
+int  j, k;
+for (j = 0; j < 24; j++)
 {
-	for (j = 0; j < 10; j++)
-	{
-		{
-			for (k = 0; k < 10; k++)
-		}  
+for (k = 0; k < 60; k++)
+{
+_putchar(j / 10 + '0');
+_putchar(j % 10 + '0');
+_putchar(':');
+_putchar(k / 10 + '0');
+_putchar(k % 10 + '0');
+_putchar('\n');
 }
-
+}
+if (j > 24)
+_putchar('\n');
+}
