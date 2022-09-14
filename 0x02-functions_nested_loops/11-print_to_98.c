@@ -9,10 +9,10 @@
 void print_to_98(int n)
 {
 int  i;
-for (i = n; i <= 98; n <= 98 ? i++ : i--)
+for (i = n; i <= 98; (n <= 98 ? i++ : i--))
 {
 printf("%d", i);
-if (i > 98)
+if (i < 98)
 _putchar(',');
 _putchar(' ');
 }
