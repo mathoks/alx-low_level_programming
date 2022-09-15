@@ -1,11 +1,15 @@
+#include <ctype.h>
 #include "main.h"
 /**
- * _isdigit - is a digit
- * @c: parameter
+ * isdigit - checks lowercase
+ * @c: value
  * Description: checks
  * Return: 1 or 0
  */
 int _isdigit(int c)
 {
-	return ((c >= 0 && c <= 9) || c == '0');
+if (isdigit(c) > 0)
+return (1);
+else
+return (0);
 }
