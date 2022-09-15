@@ -1,25 +1,29 @@
+#include <stdio.h>
 #include "main.h"
 /**
- * print_square - hfgdfdf
- * @size: gdfdf
- * Description: ehehhe
- * Return: bbedbgdh
- */
+* print_square - Prints # square of size size
+* @size: parameter
+* Return: nothing
+*/
 void print_square(int size)
 {
-	int i, j;
+int a, b;
 
-	if (size == 0)
-	_putchar('\n');
-	else
-	{
-	for (i = 0; i < size; i++)
-	{
-		for (j = 0; j < size; j++)
-		{
-			_putchar(35);
-		}
-		_putchar('\n');
-	}
-	}
+if (size > 0)
+{
+for (a = 0; a < size; a++)
+{
+for (b = 0; b < (size - 1); b++)
+{
+_putchar('#');
+}
+
+_putchar('#');
+_putchar('\n');
+}
+}
+else
+{
+_putchar('\n');
+}
 }
