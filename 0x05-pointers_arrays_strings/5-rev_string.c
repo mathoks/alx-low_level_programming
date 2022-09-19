@@ -1,4 +1,5 @@
 #include "main.h"
+#include "string.h"
 /**
  * rev_string - prints
  * @s: ggfhfh
@@ -6,27 +7,18 @@
  */
 void rev_string(char *s)
 {
-	int i, j;
-	char *begin, *end, temp;
-	begin = s;
-	end = s;
-	
+	int len, i, half;
+	char temp;
+
+	for (len = 0; s[len] != '\0'; len++)
+	;
 	i = 0;
-	while (*(begin + i) != '\0')
+	half = len / 2;
+	while (half--)
 	{
+		temp = s[len - i - 1];
+		s[len - i - 1] = s[i];
+		s[i] = temp;
 		i++;
 	}
-	for (j = 0; j <= i - 1; j++)
-	{
-		end++;
-	}
-	for (j = 0; j < i / 2; j++)
-	{
-		temp = *end;
-		*end = *begin;
-		*begin = temp;
-		begin++;
-		end--;
-	}
-	_putchar('\n');
 }
