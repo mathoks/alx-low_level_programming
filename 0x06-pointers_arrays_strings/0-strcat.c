@@ -3,15 +3,18 @@
  * _strcat - join two strings
  * @dest: destination
  * @src: source
- * return: ptr
+ *
+ * Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
-	char *ptr = dest;
+	char *pr = dest;
 
-	while (*ptr)
-		ptr++;
-			while (*ptr++ == *src++)
+	while (*pr)
+		pr++;
+			while ((*pr++ = *src++))
+			{
 				;
-	return dest;
+			}
+	return (dest);
 }
