@@ -9,7 +9,7 @@
 char *_strpbrk(char *s, char *accept)
 {
 while (*s)
-if (strchr(s, *accept++))
+if (strchr(accept, *s++))
 return ((char *) --s);
 return (0);
 }
