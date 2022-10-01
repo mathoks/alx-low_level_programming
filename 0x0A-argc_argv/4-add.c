@@ -23,10 +23,13 @@ for (i = 1; i < argc; i++)
 {
 ptr = argv[i];
 length = strlen(ptr);
+for (j = 0; j < length; j++)
+{
 if (isdigit(*(ptr + j)) == 0)
 {
 printf("Error\n");
 return (1);
+}
 }
 sum += atoi(argv[i]);
 }
