@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
+#include <ctye.h>
 #include "main.h"
 
 /**
@@ -25,7 +25,7 @@ ptr = argv[i];
 length = strlen(ptr);
 if (isdigit(*(ptr + j)) == 0)
 {
-printf("Error\n")
+printf("Error\n");
 return (1);
 }
 sum += atoi(argv[i]);
@@ -34,4 +34,3 @@ printf("%d\n", sum);
 }
 return (0);
 }
-
