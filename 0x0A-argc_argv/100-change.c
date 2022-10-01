@@ -20,7 +20,7 @@ i -= 2;
 else if (i % 25 == 0)
 i -= 25;
 else if (i % 10 == 0)
-i -= 10;
+i -= 10
 else if (i % 5 == 0)
 i -= 5;
 else if (i % 2 == 0)
