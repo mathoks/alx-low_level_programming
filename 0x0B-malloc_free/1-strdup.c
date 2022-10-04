@@ -9,8 +9,8 @@
 char *_strdup(char *str)
 {
 	int i = 0;
-	int len = strlen(str) + 1;
-	char *dest = (char *) malloc(len * sizeof(char));
+	int len = strlen(str);
+	char *dest = (char *) malloc((len * sizeof(char)) + 1);
 
 	if (str == NULL)
 		return (NULL);
@@ -21,6 +21,5 @@ char *_strdup(char *str)
 		*(dest + i) = *(str + i);
 		i++;
 	}
-	*(dest + i) = '\0';
 	return (dest);
 }
