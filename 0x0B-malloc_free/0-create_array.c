@@ -5,12 +5,12 @@
  * create_array - ghhfgh
  * @size: dff
  * @c: character
- * return: ptr
+ * Return: ptr
  */
 char *create_array(unsigned int size, char c)
 {
 	size_t i = 0;
-	char *ptr = (char *) malloc((sizeof(char) * size) + 1);
+	char *ptr = (char *) malloc((sizeof(char) * size));
 
 	if (!ptr)
 		return (NULL);
