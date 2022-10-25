@@ -19,7 +19,7 @@ if (*head == NULL)
 *head = new_node;
 return (new_node);
 }
-while(ptr->next != NULL)
+while (ptr->next != NULL)
 {
 ptr = ptr->next;
 }
